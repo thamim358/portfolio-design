@@ -1,0 +1,206 @@
+
+.space{
+    // background-image: linear-gradient(to bottom, #060723, #070a29, #060c2f, #040e35, #02103b, #02103b, #02103b, #02103b, #040e35, #060c2f, #070a29, #060723);
+    // background-image: linear-gradient(to bottom, #080921, #090b27, #080d2d, #060f34, #03113a, #03113a, #03113a, #03113a, #060f34, #080d2d, #090b27, #080921);
+
+}
+  .contact img {
+    width: 92%;
+  }
+  .contact h2 {
+      font-size: 45px;
+      font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form input:focus, .contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+  }
+  .contact form input::placeholder, .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+  }
+  body {
+    background-color: #505E6B;  
+  }
+  
+  .phone {
+    position: relative;
+    height: 435px;
+    width: 230px;
+    border-radius: 50px;
+    margin: 20px auto;
+    background-color: #000000;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .shadow {
+    position: absolute;
+    height: 500px;
+    width: 230px;
+    left: 45%;
+    background-color: #373935;
+    transform: rotate(20deg);
+    z-index: 1;
+  }
+  
+  .speaker {
+    position: relative;
+    height: 9px;
+    width: 45px;
+    border-radius: 30px;
+    background-color: #1f1d1d;
+    margin-top: 7%;
+    margin-left: 38.5%;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .camera {
+    position: relative;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #383838;
+    margin-top: 7%;
+    margin-left: 12%;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .screen {
+    position: relative;
+    height: 72%;
+    width: 88%;
+    margin: 13.5% auto;
+    background-color: #ffffff;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+  .btn {
+    position: relative;
+    height: 5%;
+    width: 25%;
+    border-radius: 30px;
+    background-color: #161616;
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+  }
+  
+  .menubar {
+    height: 25px;
+    width: 100%;
+    background-color: #141a19;
+  }
+  
+  .menu-icon {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    margin: 6px 10px;
+  }
+  
+  .menu-icon:nth-of-type(2) {
+    margin-top: 11px;
+  }
+  
+  .menu-icon:nth-of-type(3) {
+    margin-top: 16px;
+  }
+  
+  .entry {
+    height: 80px;
+    border-bottom: 2px solid #d6d6d6;
+    overflow: hidden;
+  }
+  
+  .profiler {
+    height: 40px;
+    width: 40px;
+    background-color: #ADB7C1;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: inline-block;
+  }
+  
+  .title {
+    height: 5px;
+    width: 40px;
+    background-color: #D5E1ED;
+    margin-top: -33px;
+    margin-left: 64px;
+  }
+  
+  .text {
+    height: 5px;
+    width: 120px;
+    background-color: #ADB7C1;
+    margin-top: 7px;
+    margin-left: 64px;
+  }
+  
+  #focus {
+    cursor: pointer;
+    -webkit-animation: animate 2s ease-out 1s infinite;
+  }
+  
+  @-webkit-keyframes animate {
+    0% {transform: scale(1);}
+    2.5% {transform: scale(0.9);}
+    5% {transform: scale(1); height: 80px;}
+    15% {height: 300px;}
+    65% {height: 300px;}
+    75% {height: 80px;}
+  }
+  
+  .add-content {
+    height: 5px;
+    width: 170px;
+    background-color: #D5E1ED;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  
+  #credit {
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 10px;
+    left: 20px;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  a:focus,
+  a:hover {
+    color: #4ECCC1;
+  }

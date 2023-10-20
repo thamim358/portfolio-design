@@ -1,0 +1,149 @@
+
+.dashboarsd{
+    margin-top: 0;
+    background-image: radial-gradient(circle, #313434, #2d2f30, #292b2c, #252627, #212223, #1f2021, #1d1d1e, #1b1b1c, #1a1b1b, #191a1b, #191a1a, #181919);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .ant-progress-text {
+    color: white !important;
+  }
+  .banner{
+    width:1800px;
+    height: 400px;
+  }
+
+/* Styles for the top-down overlay menu */
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Initial height of 0 to hide the menu */
+  background-color: #333; /* Background color */
+  transition: height 0.3s ease;
+  z-index: 1000;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.overlay-menu.open {
+  height: 100%; /* Slide in from the top when open */
+}
+
+.overlay-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  padding-top: 20%; /* Adjust the padding as needed */
+}
+
+.overlay-menu li {
+  padding: 15px 0;
+}
+
+/* Styles for links in the top-down overlay menu */
+.overlay-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Hover effect for links */
+.overlay-menu a:hover {
+  color: #6B46C1;
+  font-weight: bold;
+}
+
+/* Styles for the close button */
+.overlay-menu .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+.photos{
+  height: 30rem;
+  width: 25rem; 
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* CSS for backdrop element */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 40;
+}
+.photo{
+  height: 30rem;
+  width: 35rem; 
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background: rgb(32, 32, 32);
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.divider-grad-mask {
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(90deg, #525255 0 50%, transparent 0 100%) 0 0 / 2rem 1rem;
+  mask: linear-gradient(-90deg, black, transparent);
+  animation: moveGradient 13s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.overlay-menu li {
+  border-bottom: 1px solid #fff; /* Add a white horizontal line as a divider */
+  padding: 15px 0;
+}
+
+.overlay-menu li:last-child {
+  border-bottom: none; /* Remove divider from the last menu item */
+}
+
+
+
+
+
+

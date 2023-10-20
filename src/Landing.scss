@@ -1,0 +1,28 @@
+// body {
+//     scrollbar-width: none; 
+//     -ms-overflow-style: none; 
+//     background-image: linear-gradient(to right bottom, #313434, #18191a, #292d2e, #252627, #212223, #1f2021, #2e2e34, #232326, #1a1b1b, #1e1f20, #2a2d2d, #1b1e1e);
+//   }
+  
+  body::-webkit-scrollbar {
+    display: none; 
+  }
+body {
+    background-image: linear-gradient(to right bottom, #313434, #18191a, #292d2e, #252627, #212223, #1f2021, #2d2d2e, #232326, #1a1b1b, #1e1f20, #2a2d2d, #1b1e1e);
+    background-size: 300% 300%;
+    animation: gradient-animation 4s ease infinite;
+    background-attachment: fixed;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
