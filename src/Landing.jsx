@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer";
 import Services from "./Services/Services";
 import AboutMe from "./AboutMe/AboutMe";
 import Skills from "./Skills/Skills";
+import Project from "./Project/Project";
 
 
 function Landing() {
@@ -13,6 +14,7 @@ function Landing() {
     <>
       <Header/>
       <AboutMe/>
+      <Project/>
       <Services/>
       <Skills/>
       <ContactUs/>

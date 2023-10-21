@@ -3,7 +3,7 @@ import "../Header/Header.scss";
 import "./ContactUs.scss";
 import emailjs from "emailjs-com";
 import WOW from "wow.js";
-import contactImg from "../img/contact-img.svg";
+// import contactImg from "../img/contact-img.svg";
 import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
 

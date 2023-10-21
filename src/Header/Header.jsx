@@ -116,6 +116,16 @@ function Header() {
               <li>
                 <Link
                   className="text-white font-sans hover:text-gray-500 font-base  font-sans cursor-pointer"
+                  to="project"
+                  spy={true}
+                  smooth={true}
+                >
+                  PROJECTS
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white font-sans hover:text-gray-500 font-base  font-sans cursor-pointer"
                   to="services"
                   spy={true}
                   smooth={true}
@@ -228,6 +238,17 @@ function Header() {
           <li className="">
             <Link
               className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold cursor-pointer"
+              to="project"
+              spy={true}
+              smooth={true}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+             PROJECTS
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold cursor-pointer"
               to="services"
               spy={true}
               smooth={true}
@@ -285,10 +306,10 @@ function Header() {
             <div className="  lg:p-3px tracking-wider mt-12">
               <div className="wow fadeIn mt-12 pt-5">
                 <div className="text-white text-base  font-sans "style={textShadowStyle}>
-                  I AM
+                  HI, I AM
                 </div>
                 <div
-                  className="text-white text-6xl sm:text-6xl lg:text-8xl font-sans font-black "
+                  className="text-white text-7xl sm:text-7xl lg:text-9xl font-sans font-black "
                   style={textShadowStyle}
                 >
                   THAMIM{" "}
@@ -351,7 +372,7 @@ function Header() {
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/thàmím-añsãrì-1114a81a4"
+                  href="https://www.linkedin.com/in/thamim358"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
