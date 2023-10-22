@@ -118,10 +118,10 @@ function AboutMe() {
     <>
       <div className="section wave" id="aboutsection" style={textShadowStyle}>
         <div className="py-10 px-5 lg:mx-12 sm:mx-4">
-          <div className="Name uppercase text-center text-5xl text-gray-500  font-bold wow rotateIn">
+          <div className="Name uppercase text-center text-5xl text-gray-500  font-bold wow fadeInUp">
             About Me
           </div>
-          <p className="wow slideInUp mt-5 text-gray-400 text-base font-thin text-justify">
+          <p className="wow fadeInUp mt-5 text-gray-400 text-base font-thin text-justify">
             Dedicated and motivated frontend developer with a strong foundation
             in web development technologies. Recently graduated with a
             Bachelor's degree in Computer Science and currently pursuing a
@@ -132,7 +132,7 @@ function AboutMe() {
             concepts. Seeking an opportunity to apply my skills and contribute
             to building innovative web applications.
           </p>
-          <div className="max-w-8xl mx-auto flex flex-col-reverse lg:flex-row items-center">
+          <div className="max-w-8xl mx-auto flex flex-col-reverse lg:flex-row items-center ">
             {/* <div className="w-full lg:w-1/2  mt-7 ">
         <p className="text-gray-500  wow fadeInUp  text-xl font-medium uppercase mb-5  ">
           Personal Details
@@ -202,19 +202,16 @@ function AboutMe() {
               </div>
             </div>
           </div>
-          <div className="text-4xl font-sans font-semibold text-white mt-5 ">
+          <div className="text-4xl font-sans font-semibold text-white mt-5 wow fadeInUp">
             Let's work together
           </div>
-          <div
-            className="text-gray-400 text-base font-medium text-justify sm: mt-3 lg:max-w-3xl"
-            
-          >
+          <div className="wow fadeInUp text-gray-400 text-base font-medium text-justify sm: mt-3 lg:max-w-3xl ">
             Are you ready to transform your digital journey into an
             unforgettable user experience? Join forces with me, your dedicated
             UX designer, and let's create designs that captivate, engage, and
             leave a lasting impression.
           </div>
-          <div className="mt-5">
+          <div className="mt-5 wow fadeInUp">
             <Link
               className="bg-gradient-to-r from-gray-400 to-gray-500 text-white font-bold py-2 px-3 rounded hover:from-pink-500 hover:to-yellow-500 wow bounceIn cursor-pointer "
               to="contactme"
@@ -226,7 +223,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="divider-grad-mask mt-10"></div>
+      <div className="divider-grad-mask wow fadeInUp mt-10"></div>
     </>
   );
 }

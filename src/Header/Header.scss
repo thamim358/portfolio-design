@@ -23,13 +23,16 @@
   width: 100%;
   height: 0; /* Initial height of 0 to hide the menu */
   background-color: #333; /* Background color */
-  transition: height 0.3s ease;
+  transition: top 0.2s ease-in-out;
   z-index: 1000;
   overflow: hidden; /* Hide overflowing content */
 }
 
 .overlay-menu.open {
-  height: 100%; /* Slide in from the top when open */
+  height: 83%;
+  border-bottom-left-radius: 30px;/* Slide in from the top when open */
+  border-bottom-right-radius: 30px;
+  transform: translateY(0);
 }
 
 .overlay-menu ul {
@@ -37,39 +40,11 @@
   margin: 0;
   list-style: none;
   text-align: center;
-  padding-top: 20%; /* Adjust the padding as needed */
+  padding-top: 10%; /* Adjust the padding as needed */
 }
 
 .overlay-menu li {
   padding: 15px 0;
-}
-
-/* Styles for links in the top-down overlay menu */
-.overlay-menu a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-}
-
-/* Hover effect for links */
-.overlay-menu a:hover {
-  color: #6B46C1;
-  font-weight: bold;
-}
-
-/* Styles for the close button */
-.overlay-menu .close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 24px;
-}
-
-.photos{
-  height: 30rem;
-  width: 25rem; 
 }
 
 body.menu-open {
@@ -134,13 +109,9 @@ body {
   }
 }
 .overlay-menu li {
-  border-bottom: 1px solid #fff; /* Add a white horizontal line as a divider */
-  padding: 15px 0;
+  color: white;
 }
 
-.overlay-menu li:last-child {
-  border-bottom: none; /* Remove divider from the last menu item */
-}
 
 
 

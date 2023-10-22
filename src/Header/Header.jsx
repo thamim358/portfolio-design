@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Header.scss";
 import { TypeAnimation } from "react-type-animation";
-import thamimpdf from "../img/Thamim Resume2.pdf";
+import thamimpdf from "../img/ThamimOctober.pdf";
 import WOW from "wow.js";
 import { Link } from "react-scroll";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -53,7 +53,7 @@ function Header() {
         className="sticky top-0 left-0 right-0 w-full shadow-lg bg-opacity-5 bg-white nav-bar sm:w-full z-10 "
       >
         <div className=" sm:mx-auto md:mx-10 lg:mx-20 flex items-center justify-between py-4 ">
-          <div className="text-white font-black font-mono text-3xl  wow lightSpeedIn ml-4">
+          <div className="text-white font-black font-mono text-3xl  ml-4">
             MTA
             {/* <img src={mta1} alt="wdwd" className=""/> */}
           </div>
@@ -177,11 +177,9 @@ function Header() {
           onClick={toggleMobileMenu}
         ></div>
       )}
-      <div className={`overlay-menu ${isMobileMenuOpen ? "open" : ""}`}>
-        <div className="flex justify-between p-3 ">
-          <div className="text-white font-mono font-bold text-3xl ">
-            MTA
-          </div>
+      <div className={`overlay-menu ${isMobileMenuOpen ? "open" : "hidden"}`}>
+        <div className="flex justify-between p-5 ">
+          <div className="text-white font-mono font-bold text-3xl ">MTA</div>
           <button
             onClick={toggleMobileMenu}
             className="text-gray-400 hover:text-purple-600  focus:outline-none"
@@ -210,94 +208,90 @@ function Header() {
             </svg>
           </button>
         </div>
-
-        <ul className="">
-          <li className="">
-            <Link
-              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold font-sans cursor-pointer"
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-             HOME
-            </Link>
-          </li>
-          <li className="">
-            <Link
-              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold font-sans cursor-pointer"
-              to="aboutsection"
-              spy={true}
-              smooth={true}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              ABOUT
-            </Link>
-          </li>
-          <li className="">
-            <Link
-              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold cursor-pointer"
-              to="project"
-              spy={true}
-              smooth={true}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-             PROJECTS
-            </Link>
-          </li>
-          <li className="">
-            <Link
-              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold cursor-pointer"
-              to="services"
-              spy={true}
-              smooth={true}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-             SERVICES
-            </Link>
-          </li>
-          <li className="">
-            <Link
-              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold font-sans cursor-pointer"
-              to="skills"
-              spy={true}
-              smooth={true}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-             SKILLS
-            </Link>
-          </li>
-
-          <li className="">
-            <Link
-              className="text-gray-600 font-sans hover:text-purple-600 text-2xl font-bold font-sans cursor-pointer"
-              to="contactme"
-              spy={true}
-              smooth={true}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              CONTACT ME
-            </Link>
-          </li>
-
-          <li className="wow BounceIn">
-            <a>
+        {/* <div className=" "> */}
+          <ul className="p-10">
+            <li className="">
               <Link
-                className="bg-gradient-to-r from-[#005eff] to-gray-400 text-white font-bold py-2 px-3 rounded hover:from-pink-500 hover:to-yellow-500 wow bounceIn cursor-pointer"
-                to="donate"
+                className="text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                activeClass="active"
+                to="home"
                 spy={true}
                 smooth={true}
-                href={thamimpdf}
-                download="resume"
-                target="_blank"
+                onClick={() => setMobileMenuOpen(false)}
               >
-                DOWNLOAD CV
+                HOME
               </Link>
-            </a>
-          </li>
-        </ul>
-      </div>
+            </li>
+            <li className="">
+              <Link
+                className="text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                to="aboutsection"
+                spy={true}
+                smooth={true}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                ABOUT
+              </Link>
+            </li>
+            <li className="">
+              <Link
+                className="text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                to="project"
+                spy={true}
+                smooth={true}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                PROJECTS
+              </Link>
+            </li>
+            <li className="">
+              <Link
+                className="text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                to="services"
+                spy={true}
+                smooth={true}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                SERVICES
+              </Link>
+            </li>
+            <li className="">
+              <Link
+                className="text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                to="skills"
+                spy={true}
+                smooth={true}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                SKILLS
+              </Link>
+            </li>
+
+            <li className="">
+              <Link
+                className="text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                to="contactme"
+                spy={true}
+                smooth={true}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                CONTACT ME
+              </Link>
+            </li>
+
+            <li className="">
+              <a
+                  className=" bg-gradient-to-r from-gray-400 to-gray-500 rounded-xl p-3 text-white font-sans hover:text-gray-400 text-xl font-bold font-sans cursor-pointer"
+                  href={thamimpdf}
+                  download="ThamimResume"
+                  target="_blank"
+                >
+                  DOWNLOAD CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      {/* </div> */}
 
       {/* SHUBBA REDDY */}
       <div className="dashboard w-screen bg-fixed md:w-full h-fit  " id="home">
@@ -305,16 +299,22 @@ function Header() {
           <div className="flex flex-col items-center justify-center">
             <div className="  lg:p-3px tracking-wider mt-12">
               <div className="wow fadeIn mt-12 pt-5">
-                <div className="text-white text-base  font-sans "style={textShadowStyle}>
+                <div
+                  className="text-white text-base  font-sans wow fadeInUp"
+                  style={textShadowStyle}
+                >
                   HI, I AM
                 </div>
                 <div
-                  className="text-white text-7xl sm:text-7xl lg:text-9xl font-sans font-black "
+                  className="text-white text-7xl sm:text-7xl lg:text-9xl font-sans font-black wow fadeInUp"
                   style={textShadowStyle}
                 >
                   THAMIM{" "}
                 </div>
-                <div className="text-white text-base sm:text-sm lg:text-base font-bold text-end gap-2"  style={textShadowStyle}>
+                <div
+                  className="text-white text-base sm:text-sm lg:text-base font-bold text-end gap-2 wow fadeInUp"
+                  style={textShadowStyle}
+                >
                   A {""}
                   <span>
                     <TypeAnimation
@@ -328,9 +328,8 @@ function Header() {
                       ]}
                       wrapper="span"
                       speed={50}
-                      style={{ display: "inline-block",textShadowStyle }}
-                      className="text-gray-400 text-base sm:text-sm lg:text-base font-bold uppercase"
-
+                      style={{ display: "inline-block", textShadowStyle }}
+                      className="text-gray-400 text-base sm:text-sm lg:text-base font-bold uppercase wow fadeInUp"
                       repeat={Infinity}
                     />
                   </span>
@@ -347,7 +346,10 @@ function Header() {
                   DOWNLOAD CV
                 </a>
               </div> */}
-              <div className="flex gap-3 mt-6"style={textShadowStyle}>
+              <div
+                className="flex gap-3 mt-6 wow fadeInUp"
+                style={textShadowStyle}
+              >
                 <a
                   href="https://instagram.com/___thamim__?igshid=ZDc4ODBmNjlmNQ=="
                   target="_blank"
@@ -357,7 +359,6 @@ function Header() {
                     size={32}
                     variant="Bold"
                     className="transform transition duration-500 hover:scale-125 text-gray-400 hover:text-white"
-                    
                   />
                 </a>
                 <a
@@ -397,7 +398,6 @@ function Header() {
           </div>
         </div>
       </div>
-     
     </>
   );
 }

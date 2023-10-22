@@ -110,23 +110,23 @@ function Services() {
   return (
     <>
   <div className="section" id="services" style={textShadowStyle}>
-    <div className="Name uppercase text-5xl text-gray-500 mt-5 pt-5 font-bold text-center wow rotateIn">
+    <div className="Name uppercase text-5xl text-gray-500 mt-5 pt-5 font-bold text-center wow fadeInUp">
       Services
     </div>
-    <div className="flex flex-wrap justify-center mt-7 wow slideInUp mx-10">
+    <div className="flex flex-wrap justify-center mt-7 wow fadeInUp mx-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-3 gap-5">
         {cardsData.map((card, index) => (
           <div className="flex" key={index}>
             <div
-              className="bg-white bg-opacity-5 rounded-xl shadow-lg hover:scale-110 transition-transform duration-500"
+              className=" =bg-white bg-opacity-5 rounded-xl shadow-lg hover:scale-110 transition-transform duration-500"
               style={{ borderRadius: "30px" }}
             >
-              <div className="text-center p-6">{card.logo}</div>
+              <div className="text-center p-6 wow fadeInUp">{card.logo}</div>
               <div className="px-4 py-2">
-                <h3 className="text-base text-center text-white uppercase font-bold mb-2">
+                <h3 className="text-base text-center text-white uppercase font-bold mb-2 wow fadeInUp">
                   {card.title}
                 </h3>
-                <p className="text-gray-400 text-center text-base p-3">
+                <p className="text-gray-400 text-center text-base p-3 wow fadeInUp">
                   {card.description}
                 </p>
               </div>
@@ -136,7 +136,7 @@ function Services() {
       </div>
     </div>
 
-    <div className="flex flex-wrap justify-center mt-5 wow slideInUp mx-10">
+    <div className="flex flex-wrap justify-center mt-5 wow fadeInUp mx-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-3 gap-5">
         {cardsData2.map((card, index) => (
           <div className="flex" key={index}>
@@ -144,12 +144,12 @@ function Services() {
               className="bg-white bg-opacity-5 rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-500"
               style={{ borderRadius: "30px" }}
             >
-              <div className="text-center p-6">{card.logo}</div>
+              <div className="text-center p-6 wow fadeInUp">{card.logo}</div>
               <div className="px-4 py-2">
-                <h3 className="text-base text-center text-white uppercase font-bold mb-2">
+                <h3 className="text-base text-center text-white uppercase font-bold mb-2 wow fadeInUp">
                   {card.title}
                 </h3>
-                <p className="text-gray-400 text-center text-base p-3">
+                <p className="text-gray-400 text-center text-base p-3 wow fadeInUp">
                   {card.description}
                 </p>
               </div>

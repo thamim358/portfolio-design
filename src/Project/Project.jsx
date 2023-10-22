@@ -85,10 +85,10 @@ function Project() {
   return (
     <>
   <div className="section" id="project" style={textShadowStyle}>
-    <div className="Name uppercase text-5xl text-gray-500 mt-5 pt-5 font-bold text-center wow rotateIn">
+    <div className="Name uppercase text-5xl text-gray-500 mt-5 pt-5 font-bold text-center wow fadeInUp">
       Projects
     </div>
-     <div className=" text-2xl uppercase text-white mt-5 pt-5 font-bold text-start wow fadeIUp ml-12">
+     <div className=" text-2xl uppercase text-white mt-5 pt-5 font-bold text-start wow fadeInUp ml-12">
       websites
     </div>
     <div className="flex flex-wrap justify-center mt-5 wow fadeInUp mx-10">
@@ -96,7 +96,7 @@ function Project() {
         {projectData.map((project, index) => (
           <div className="flex" key={index}>
             <div
-              className="bg-white bg-opacity-5 rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-500"
+              className="bg-white bg-opacity-5 rounded-xl drop-shadow-2xl"
               style={{ borderRadius: "30px" }}
             >
               <div className="relative ">
@@ -108,9 +108,9 @@ function Project() {
           />
         </div>
         <div className="p-3 ml-4">
-          <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-          <p className="text-gray-400 mt-2">{project.description}</p>
-          <div className="flex justify-between items-center mt-4">
+          <h3 className="text-lg font-semibold text-white wow fadeInUp">{project.title}</h3>
+          <p className="text-gray-400 mt-2 wow fadeInUp">{project.description}</p>
+          <div className="flex justify-between items-center mt-4 wow fadeInUp">
             <a
               href={project.link}
               target="_blank"
@@ -131,10 +131,10 @@ function Project() {
         ))}
       </div>
     </div>
-    <div className=" text-2xl uppercase text-white mt-5 pt-5 font-bold text-start wow fadeIUp ml-12">
+    <div className=" text-2xl uppercase text-white mt-5 pt-5 font-bold text-start wow fadeInUp ml-12">
      Software projects
     </div>
-    <div className=" text-base uppercase text-gray-400 font-medium text-start wow fadeIUp ml-12">
+    <div className=" text-base uppercase text-gray-400 font-medium text-start wow fadeInUp ml-12">
      Corvanta Analytics as frontend developer
     </div>
     <div className="flex  justify-center mt-5 wow fadeInUp mx-10">
@@ -142,7 +142,7 @@ function Project() {
         {projectData2.map((project, index) => (
           <div className="flex" key={index}>
             <div
-              className="bg-white bg-opacity-5 rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-500"
+              className="bg-white bg-opacity-5 rounded-xl drop-shadow-2xl"
               style={{ borderRadius: "30px" }}
             >
               <div className="relative ">
@@ -154,8 +154,8 @@ function Project() {
           />
         </div>
         <div className="p-3 ml-4">
-          <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-          <p className="text-gray-400 mt-2">{project.description}</p>
+          <h3 className="text-lg font-semibold text-white wow fadeInUp">{project.title}</h3>
+          <p className="text-gray-400 mt-2 wow fadeInUp">{project.description}</p>
           
         </div>
             </div>
@@ -163,7 +163,7 @@ function Project() {
         ))}
       </div>
     </div>
-    <div className=" text-2xl uppercase text-white mt-5 pt-5 font-bold text-start wow fadeIUp ml-12">
+    <div className=" text-2xl uppercase text-white mt-5 pt-5 font-bold text-start wow fadeInUp ml-12">
      UI/UX
     </div>
     <div className="flex flex-wrap justify-center mt-5 wow fadeInUp mx-10">
@@ -171,7 +171,7 @@ function Project() {
   {projectData3.map((project, index) => (
     <div className="flex" key={index}>
       <div
-        className="bg-white bg-opacity-5 rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-500"
+        className="bg-white bg-opacity-5 rounded-xl shadow-lg "
         style={{ borderRadius: "30px" }}
       >
         <div className="relative aspect-ratio-16/9 p-3">
@@ -186,8 +186,8 @@ function Project() {
           </video>
         </div>
         <div className="p-3 ml-4">
-          <h3 className="text-lg font-semibold text-white">{project.title}</h3>
-          <p className="text-gray-400 mt-2 pb-2">{project.description}</p>
+          <h3 className="text-lg font-semibold text-white wow fadeInUp">{project.title}</h3>
+          <p className="text-gray-400 mt-2 pb-2 wow fadeInUp">{project.description}</p>
          
         </div>
       </div>

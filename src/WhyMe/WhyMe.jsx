@@ -12,7 +12,7 @@ function WhyMe() {
   return (
     <>
 <div className="section " id="whyme">
-        <p className=" text-4xl lg:text-6xl text-orange-600 mt-5 font-bold text-center wow rotateIn">
+        <p className=" text-4xl lg:text-6xl text-orange-600 mt-5 font-bold text-center wow fadeInUp">
           WHY ME?
         </p>
 

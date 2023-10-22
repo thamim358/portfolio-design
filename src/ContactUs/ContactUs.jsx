@@ -214,7 +214,7 @@ function ContactUs() {
               </Col>
               <Col size={12} md={6}>
                 <div className="lg:mt-5 mt-5 mr-10 justify-self-center md:justify-center">
-                  <div className="Name uppercase text-4xl text-gray-400 mb-5 font-bold wow rotateIn">
+                  <div className="Name uppercase text-4xl text-gray-400 mb-5 font-bold wow fadeInUp">
                     Get In touch
                   </div>
                   <form ref={form} onSubmit={sendEmail}>
