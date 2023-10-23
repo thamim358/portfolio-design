@@ -394,7 +394,7 @@ function Header() {
                 </a>
               </div>
             </div>
-            <div className="divider-grad-mask mt-10"></div>
+            <div className="divider-grad-mask mt-32"></div>
           </div>
         </div>
       </div>
