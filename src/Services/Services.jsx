@@ -118,7 +118,7 @@ function Services() {
         {cardsData.map((card, index) => (
           <div className="flex" key={index}>
             <div
-              className=" =bg-white bg-opacity-5 rounded-xl shadow-lg hover:scale-110 transition-transform duration-500"
+              className="bg-white bg-opacity-5 rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-500"
               style={{ borderRadius: "30px" }}
             >
               <div className="text-center p-6 wow fadeInUp">{card.logo}</div>
